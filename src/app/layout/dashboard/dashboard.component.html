@@ -1,0 +1,279 @@
+<div [@routerTransition]>
+    
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card card-default">
+                <div class="card-header"><i class="fa fa-clock-o fa-fw"></i> Notifications timeline (No updates are available)</div>
+                <!-- /.card-header -->
+                <app-timeline></app-timeline>
+                <!-- /.card-body -->
+            </div>
+            <hr />
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!-- /.card -->
+        </div>
+        <hr />
+        
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'primary'" [count]="26" [icon]="'fa-comments'" [label]="'My courses!'"></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'warning'" [count]="12" [icon]="'fa-tasks'" [label]="'Assessment'"></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat
+                [bgClass]="'success'"
+                [count]="124"
+                [icon]="'fa-tasks'"
+                [label]="'Attendance!'"
+            ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'danger'" [count]="13" [icon]="'fa-support'" [label]="'Gradebook!'"></app-stat>
+        </div>
+    </div>
+    <hr />
+    
+    <div class="row">
+         <div class="row">
+        <div class="col-lg-7">
+            <div class="card car-default">
+                <div class="card-header"><i class="fa fa-ellipsis-v fa-fw"></i> Courses details</div>
+                <!-- /.card-header -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush table-flush">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Courses</th>
+                          <th scope="col">Fees</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Completion</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Argon Design System</span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                            $2,500 USD
+                          </td>
+                          <td>
+                            <span class="badge badge-dot mr-4">
+                              <i class="bg-warning"></i> pending
+                            </span>
+                          </td>
+                          
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="mr-2">60%</span>
+                              <div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            <div ngbDropdown placement="bottom-right">
+                              <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
+                                <i class="fas fa-ellipsis-v"></i>
+                              </a>
+                              
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="assets/img/theme/angular.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Angular 8 </span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                            $1,800 USD
+                          </td>
+                          <td>
+                            <span class="badge badge-dot">
+                              <i class="bg-success"></i> completed
+                            </span>
+                          </td>
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="mr-2">100%</span>
+                              <div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            <div ngbDropdown placement="bottom-right">
+                              <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
+                                <i class="fas fa-ellipsis-v"></i>
+                              </a>
+                              
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="assets/img/theme/sketch.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Black </span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                            $3,150 USD
+                          </td>
+                          <td>
+                            <span class="badge badge-dot mr-4">
+                              <i class="bg-danger"></i> delayed
+                            </span>
+                          </td>
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="mr-2">72%</span>
+                              <div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="assets/img/theme/react.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">React js </span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                            $4,400 USD
+                          </td>
+                          <td>
+                            <span class="badge badge-dot">
+                              <i class="bg-info"></i> on schedule
+                            </span>
+                          </td>
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="mr-2">90%</span>
+                              <div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            <div ngbDropdown placement="top-right">
+                              <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
+                                <i class="fas fa-ellipsis-v"></i>
+                              </a>
+                              
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="assets/img/theme/vue.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Vue js</span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                            $2,200 USD
+                          </td>
+                          <td>
+                            <span class="badge badge-dot mr-4">
+                              <i class="bg-success"></i> completed
+                            </span>
+                          </td>
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="mr-2">100%</span>
+                              <div>
+                                <div class="progress">
+                                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                
+            
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+            <div class="card card-default mb-3">
+                <div class="card-header"><i class="fa fa-bell fa-fw"></i> Notifications card</div>
+                <!-- /.card-header -->
+                <app-notification></app-notification>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+<hr />
+<hr />
+            <app-chat></app-chat>
+            <!-- /.card .chat-card -->
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    
+</div>

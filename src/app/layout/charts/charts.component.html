@@ -1,0 +1,37 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Charts'" [icon]="'fa-bar-chart-o'"></app-page-header>
+    <div class="row">
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Test Chart
+                </div>
+                <div class="card-body">
+                    <canvas
+                        (chartClick)="chartClicked($event)"
+                        (chartHover)="chartHovered($event)"
+                        [chartType]="barChartType"
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [legend]="barChartLegend"
+                        [options]="barChartOptions"
+                        baseChart
+                    >
+                    </canvas>
+                </div>
+
+
+                <div style="display: block">
+                    <canvas mdbChart
+                        [chartType]="chartType"
+                        [datasets]="chartDatasets"
+                        [labels]="chartLabels"
+                        [colors]="chartColors"
+                        [options]="chartOptions"
+                        [legend]="true"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                    </canvas>
+                  </div>
+
+</div>
